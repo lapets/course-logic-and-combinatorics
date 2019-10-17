@@ -23,7 +23,7 @@ $m = new Material(
        array(
            'file' => '131.xml',
            'path' => 'material/',
-           'message' => '<b>NOTE:</b> This page contains all the examples presented during the lectures, as well as all the homework assignments. <b><a href="index.html">Click here</a></b> to go back to the main page with the course information and schedule.<br/>',
+           'message' => '',
            'toc' => 'true'
          )
       );
