@@ -1,0 +1,147 @@
+/***************************************************************
+**
+** material
+** 
+** material.css
+**   Stylesheet for rendering of course material XML files as
+**   HTML webpages.
+*/
+
+/***************************************************************
+*/
+
+body { font-family: Times,serif; }
+.material { margin: 50px 60px 50px 60px; }
+
+h1 { margin-bottom:40px; font-size:36px; color:#9A9A9A; }
+h1 > span { display:block; margin-top:4px; font-size:20px; color:#9A9A9A; }
+
+#material .toc { margin:18px 0px 18px 0px; }
+#material .toc ul { padding-top:0px; margin:0px; }
+#material .toc ul li { margin:0px; padding:0px; }
+
+#material .header_numeral { color:#8A8A8A; }
+#material h2 { margin-top:40px; color:#6A6A6A; white-space:nowrap; }
+#material h3 { padding-top:40px; white-space:nowrap; }
+
+#material .linked { position:relative; left:-45px; }
+#material .link-title {
+  color:#9F9F9F; 
+  font-variant:small-caps; font-size:11px; font-weight:bold;
+  display:inline-block;
+  vertical-align:bottom;
+  padding:0px 7px 5px 0px;
+}
+#material .link-block {
+  color:#9F9F9F;
+  font-variant:small-caps; font-size:11px; font-weight:bold;
+  float:left; display:inline-block;
+  position:relative; top:11px;  
+  margin-right:10px;
+}
+
+#material .section { }
+#material .review { }
+#material .appendix { }
+#material .subsection { }
+#material .paragraph { margin:12px 0px 12px 0px; }
+#material .text { margin:8px 0px 8px 0px; }
+
+#material .inferences { padding:8px 8px 8px 16px; }
+#material .inferences .inference { padding:5px 1px 5px 1px; }
+#material .inferences .inference .premises { 
+  border-bottom:1px solid #000000; border-spacing:0; border-collapse:collapse;
+  padding:0px 12px 0px 12px;
+  text-align:center;
+}
+#material .inferences .inference .conclusion { 
+  border:0px; border-spacing:0; border-collapse:collapse;
+  padding:0px 12px 0px 12px;
+  text-align:center;
+}
+#material .inferences .inference  .title {
+  font-family:serif; font-variant:small-caps; font-size:14px;
+}
+
+#material .code {
+  background-color:#F4F4F4;
+  border:1px dashed #AFAFAF;
+  font-family:Monospace; font-size:12px;
+  margin:8px 10px 8px 10px;
+}
+#material .code .source { margin:-8px 10px -8px 10px; }
+#material .code .source  .comment { color:#8A8A8A; font-style:italic; }
+#material .code .source  .literal { color:firebrick; font-weight:bold; }
+#material .code .source  .keyword { color:blue; font-weight:bold; }
+#material .code .source  .builtin { color:purple; font-weight:bold; }
+
+#material .assignment { }
+#material .assignment .problems { margin-left:-20px; }
+#material .assignment .problems .problem { margin:0px 0px 10px 0px; }
+#material .assignment .problems .problem .parts { margin:10px 0px 0px 0px; list-style-type:lower-alpha; }
+#material .assignment .problems .problem .part { margin:10px 0px 0px -20px; }
+#material .assignment_title { text-decoration:underline; }
+
+#material .midterm { }
+#material .midterm .problems { margin-left:-20px; }
+#material .midterm .problems .problem { margin:0px 0px 10px 0px; }
+#material .midterm .problems .problem .parts { margin:10px 0px 0px 0px; list-style-type:lower-alpha; }
+#material .midterm .problems .problem .part { margin:10px 0px 0px -20px; }
+#material .midterm_title { text-decoration:underline; }
+
+#material ul { padding-top:0px 0px 0px 5px; margin:8px 0px 8px 0px; }
+#material ul li ul { padding-top:0px 0px 0px 5px; margin:0px 0px 0px 0px; }
+#material ol { margin-left:8px; padding-top:0px 0px 0px 5px; }
+#material  li { text-align:left; position:relative; min-width:200px; padding:0px 0px 0px 0px; }
+#material  code { background-color:#EEEEEE; padding:0px 2px 0px 2px;}
+
+#material a { text-decoration:none; color:#AC701E; }
+#material a:hover { text-decoration:underline; color:firebrick; }
+
+#material .block { margin: 12px 0px 12px 0px; }
+#material .definition { padding:8px; white-space:normal; }
+#material .fact { padding:8px; white-space:normal; }
+#material .theorem { padding:8px; white-space:normal; }
+#material .conjecture { padding:8px; white-space:normal; background-color:#F6F3C8; }
+#material .algorithm { padding:8px; white-space:normal; }
+#material .protocol { padding:8px; white-space:normal; }
+#material .example { padding:8px; white-space:normal; }
+#material .exercise { padding:8px; white-space:normal; }
+#material .definition_required { padding:8px; white-space:normal; background-color:#F6F3C8; }
+#material .fact_required { padding:8px; white-space:normal; background-color:#F6F3C8; } /*F9F7DC*/
+#material .theorem_required { padding:8px; white-space:normal; background-color:#F6F3C8; }
+#material .conjecture_required { padding:8px; white-space:normal; background-color:#F6F3C8; }
+#material .algorithm_required { padding:8px; white-space:normal; background-color:#F6F3C8; }
+#material .protocol_required { padding:8px; white-space:normal; background-color:#F6F3C8; }
+#material .example_required { padding:8px; white-space:normal; background-color:#D7F8D7; }
+#material .exercise_required { padding:8px; white-space:normal; background-color:#D7F8D7; }
+#material .solution_container { border:1px dotted green; padding:0px; margin:12px 8px 8px 8px; }
+#material .solution_container .solution { background-color:#E6F9F4; border:1px dotted green; padding:8px 8px 8px 8px; }
+#material .diagram { margin:14px; text-align:center; width:100%; font-size:12px; font-family:Arial,Sans-serif; }
+#material .diagram .container { border-spacing:7px; margin:0 auto; }
+#material .diagram .container .box { font-weight:bold; padding:2px 10px 2px 10px; border:1px dashed #444444; text-align:center; }
+
+#material .fig_table {margin:8px 0px 8px 0px;}
+#material .fig_table td { padding:4px 10px 4px 10px; margin:0px 10px 0px 10px; white-space:nowrap; background-color:#EFEFEF;}
+#material .fig_table2 .cell { padding:4px 10px 4px 10px; margin:0px 10px 0px 10px; white-space:nowrap; background-color:#EFEFEF;}
+#material .truthtable td { text-align:center; }
+
+#material .btn { display:inline-block; margin-right:5px; font-size:10px; font-family:Verdana,Arial,Sans-serif; background-color:#CFCFCF; cursor:pointer; }
+#material .btn_verify { display:inline-block; padding:5px; font-size:10px; font-family:Verdana,Arial,Sans-serif; background-color:#CFCFCF; cursor:pointer; }
+#material .btn_format { display:inline-block; padding:5px; font-size:10px; font-family:Verdana,Arial,Sans-serif; background-color:#CFCFCF; cursor:pointer; }
+#material .btn_selected { background-color:#EFEFEF; cursor:pointer; }
+#material .widget_argument_controls { display:inline-block; font-size:10px; font-family:Verdana,Arial,Sans-serif; float:right; }
+
+#material .argument       { margin:0px 20px 0px 20px; padding:0px 15px 0px 15px; background-color:#F6F6F6; padding:10px; border:2px solid #FFFFFF; }
+#material .argument:hover { margin:0px 20px 0px 20px; padding:0px 15px 0px 15px; background-color:#F6F6F6; padding:10px; border:2px solid green; } /*D7F8D7*/
+
+.html_matrix_lft { border-left:1px solid #000000; border-top:1px solid #000000; border-bottom:1px solid #000000; }
+.html_matrix_rgt { border-right:1px solid #000000; border-top:1px solid #000000; border-bottom:1px solid #000000; }
+.html_matrix_entry { text-align:center; padding-left:2px; padding-right:2px; margin:0px; }
+
+.html_frac_lft { border-left:0px solid #000000; border-top:0px solid #000000; border-bottom:0px solid #000000; }
+.html_frac_rgt { border-right:0px solid #000000; border-top:0px solid #000000; border-bottom:0px solid #000000; }
+.html_frac_numerator { text-align:center; padding-left:2px; padding-right:2px; margin:0px; }
+.html_frac_denominator { text-align:center; padding-left:2px; padding-right:2px; margin:0px; }
+
+/*eof*/
